@@ -25,9 +25,16 @@ export default function ContactPage() {
               <address className="mt-4 space-y-4 text-ink-soft not-italic">
                 <p>
                   <span className="block font-bold text-navy">Address</span>
-                  {site.address.street}
-                  <br />
-                  {site.address.city}, {site.address.state} {site.address.zip}
+                  <a
+                    href={site.mapsUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-coral-dark hover:underline"
+                  >
+                    {site.address.street}
+                    <br />
+                    {site.address.city}, {site.address.state} {site.address.zip}
+                  </a>
                 </p>
                 <p>
                   <span className="block font-bold text-navy">Phone</span>
@@ -55,7 +62,8 @@ export default function ContactPage() {
                 ))}
               </dl>
               <p className="mt-4 text-sm text-ink-soft">
-                Tours run most weekday mornings. Licence #{site.licenseNumber}.
+                Tours run most weekday mornings.
+                {site.licenseNumber && ` License #${site.licenseNumber}.`}
               </p>
             </div>
           </div>

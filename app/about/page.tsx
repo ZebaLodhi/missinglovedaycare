@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 /** TODO: replace with the real staff list, photos and credentials. */
 const team = [
-  { name: "Director name", role: "Centre Director", detail: "TODO: years of experience, credentials." },
+  { name: "Director name", role: "Center Director", detail: "TODO: years of experience, credentials." },
   { name: "Lead teacher name", role: "Lead Preschool Teacher", detail: "TODO: training and specialisms." },
   { name: "Caregiver name", role: "Infant Room Lead", detail: "TODO: certifications held." },
 ];
@@ -31,7 +31,7 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About us"
-        title="A small centre that knows every child by name"
+        title="A small center that knows every child by name"
         intro={`${site.name} grew out of a simple belief: children learn fastest when they feel safe, seen and genuinely liked. That is the whole philosophy — the rest is snacks, songs and sand.`}
       />
 
@@ -66,8 +66,8 @@ export default function AboutPage() {
                 conversation rather than a wave from the doorway.
               </p>
               <p>
-                {/* TODO: replace with the founder's own words and the centre's real history. */}
-                TODO: add the founder&apos;s story here — when the centre opened, what
+                {/* TODO: replace with the founder's own words and the center's real history. */}
+                TODO: add the founder&apos;s story here — when the center opened, what
                 brought the team to early-years work, and what families should know about you.
               </p>
             </div>
@@ -111,7 +111,8 @@ export default function AboutPage() {
             <p className="eyebrow">Safety</p>
             <h2 className="mt-4 text-3xl sm:text-4xl">The promises behind the fun</h2>
             <p className="mt-4 text-ink-soft">
-              Licensed by the state and inspected regularly. Licence #{site.licenseNumber}.
+              Licensed by the Commonwealth of Virginia and inspected regularly.
+              {site.licenseNumber && ` License #${site.licenseNumber}.`}
             </p>
           </div>
           <ul className="grid gap-4 sm:grid-cols-2">

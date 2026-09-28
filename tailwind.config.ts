@@ -31,7 +31,7 @@ const config: Config = {
           light: "#7FE0D7",
           dark: "#36AFA4",
         },
-        // The heart — primary call-to-action colour
+        // The heart — primary call-to-action color
         coral: {
           DEFAULT: "#F88A71",
           light: "#FCA795",

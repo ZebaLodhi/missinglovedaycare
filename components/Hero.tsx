@@ -28,7 +28,7 @@ function BadgeIcon({ name }: { name: (typeof badges)[number]["icon"] }) {
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-cream">
-      {/* Soft shapes echoing the logo's watercolour badge. */}
+      {/* Soft shapes echoing the logo's watercolor badge. */}
       <div aria-hidden className="pointer-events-none absolute -left-24 -top-24 h-72 w-72 rounded-full bg-teal/20 blur-2xl" />
       <div aria-hidden className="pointer-events-none absolute -bottom-28 right-0 h-80 w-80 rounded-full bg-coral/20 blur-2xl" />
       <div aria-hidden className="pointer-events-none absolute right-1/4 top-10 h-24 w-24 rounded-full bg-sun/25 blur-xl" />
@@ -42,10 +42,25 @@ export default function Hero() {
             feel safe
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-            {site.name} is a licensed early-learning centre for children {site.ageRange}.
-            Small groups, familiar faces and a day built around play — so your child is
-            cared for the way you would care for them yourself.
+            {site.name} is a licensed early-learning center in {site.address.city},
+            Virginia for children {site.ageRange}. Small groups, familiar faces and a day
+            built around play — so your child is cared for the way you would care for
+            them yourself.
           </p>
+
+          {site.reviews.show && (
+            <p className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-navy shadow-soft">
+              <span className="flex gap-0.5 text-sun" aria-hidden="true">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg key={i} width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 4l2.3 4.7 5.2.8-3.8 3.6.9 5.1-4.6-2.4-4.6 2.4.9-5.1L4.5 9.5l5.2-.8L12 4z" />
+                  </svg>
+                ))}
+              </span>
+              {site.reviews.recommendPercent}% of {site.reviews.count} families on{" "}
+              {site.reviews.source} recommend us
+            </p>
+          )}
 
           <div className="mt-8 flex flex-wrap gap-3">
             <Link href="/contact" className="btn-coral">

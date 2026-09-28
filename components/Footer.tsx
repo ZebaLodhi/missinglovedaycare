@@ -67,7 +67,7 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {site.name}. {site.tagline}.
           </p>
-          <p>Licence #{site.licenseNumber}</p>
+          {site.licenseNumber && <p>License #{site.licenseNumber}</p>}
         </div>
       </div>
     </footer>

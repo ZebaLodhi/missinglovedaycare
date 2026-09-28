@@ -1,6 +1,6 @@
 /**
  * TODO: these answers are drafted placeholders. Check each one against the
- * centre's actual policies (and state licensing rules) before publishing.
+ * center's actual policies (and state licensing rules) before publishing.
  */
 export const faqs = [
   {

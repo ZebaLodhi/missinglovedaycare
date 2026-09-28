@@ -9,8 +9,8 @@ export type Program = {
 };
 
 /**
- * TODO: confirm age bands, staff-to-child ratios and programme details
- * against the centre's licence and daily practice before launch.
+ * TODO: confirm age bands, staff-to-child ratios and program details
+ * against the center's license and daily practice before launch.
  */
 export const programs: Program[] = [
   {
@@ -51,7 +51,7 @@ export const programs: Program[] = [
     summary:
       "Play-based learning that quietly builds the letters, numbers and social skills kindergarten asks for.",
     highlights: [
-      "Letter, number and early-writing centres",
+      "Letter, number and early-writing centers",
       "Show-and-tell and story circle",
       "STEM discovery table",
       "Kindergarten-readiness check-ins",

@@ -1,30 +1,32 @@
 /**
  * Every real-world detail the site displays lives here.
  *
- * IMPORTANT: the values marked `TODO` are placeholders written by the build,
- * not facts about the centre. Replace them with the real address, phone,
- * licence number, hours and tuition before the site goes live.
+ * Contact details below are the center's real ones, taken from its Facebook
+ * page. The values still marked `TODO` are placeholders written by the build,
+ * not facts — replace them before the site goes live.
  */
 export const site = {
   name: "Missing Love Daycare",
   tagline: "Nurturing Hearts & Minds",
   shortDescription:
-    "A warm, licensed early-learning home where every child is met with patience, play and plenty of love.",
+    "A warm, licensed early-learning home in Chantilly, Virginia where every child is met with patience, play and plenty of love.",
 
-  // TODO: replace with the centre's real contact details.
-  phone: "(000) 000-0000",
-  phoneHref: "tel:+10000000000",
-  email: "hello@missinglovedaycare.com",
+  phone: "(602) 733-7957",
+  phoneHref: "tel:+16027337957",
+  email: "drukhsana@ymail.com",
   address: {
-    street: "123 Example Street",
-    city: "Your City",
-    state: "ST",
-    zip: "00000",
+    street: "42971 Golf View Dr",
+    city: "Chantilly",
+    state: "VA",
+    zip: "20152",
+    country: "US",
   },
+  mapsUrl:
+    "https://www.google.com/maps/search/?api=1&query=42971+Golf+View+Dr,+Chantilly,+VA+20152",
 
-  // TODO: replace with the real state licence number, or remove the line
-  // from components/Footer.tsx if it should not be displayed.
-  licenseNumber: "TODO-LICENSE-000000",
+  // TODO: add the Virginia licence number. While this is empty the line is
+  // hidden rather than showing a placeholder.
+  licenseNumber: "",
 
   // TODO: confirm real opening hours.
   hours: [
@@ -35,8 +37,19 @@ export const site = {
 
   ageRange: "6 weeks – 12 years",
 
+  /**
+   * Facebook rating as shown on the center's page. TODO: update the count when
+   * it moves, or set `show: false` to hide the badge.
+   */
+  reviews: {
+    show: true,
+    source: "Facebook",
+    recommendPercent: 100,
+    count: 24,
+  },
+
   social: {
-    // TODO: add real profile URLs, or leave empty to hide the link.
+    // TODO: paste the Facebook page URL to turn the footer link on.
     facebook: "",
     instagram: "",
   },

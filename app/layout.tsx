@@ -30,11 +30,11 @@ export const metadata: Metadata = {
   },
   description: site.shortDescription,
   keywords: [
-    "daycare",
-    "childcare",
-    "preschool",
-    "infant care",
-    "after school care",
+    "daycare Chantilly VA",
+    "childcare Chantilly Virginia",
+    "preschool Chantilly",
+    "infant care 20152",
+    "after school care Chantilly",
     site.name,
   ],
   openGraph: {

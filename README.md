@@ -3,7 +3,7 @@
 Marketing site for **Missing Love Daycare** — *Nurturing Hearts & Minds*.
 Built with Next.js 15 (App Router), TypeScript and Tailwind CSS.
 
-## Brand colours
+## Brand colors
 
 Sampled from the logo in `public/brand/missing-love-daycare-logo.jpg` and wired
 into `tailwind.config.ts`:
@@ -31,19 +31,22 @@ npm run build    # production build
 The build filled unknown business details with clearly marked placeholders.
 Search the repo for `TODO` and replace each one:
 
-- **`data/site.ts`** — phone, email, address, licence number, opening hours,
-  social links.
+- **`data/site.ts`** — the phone, email and address are real (from the
+  Facebook page). Still to fill in: the Virginia license number (the line stays
+  hidden while it is empty), the opening hours, and the Facebook page URL.
 - **`data/tuition.ts`** — every rate is `$000`. Replace with real pricing and
   fee amounts.
 - **`data/testimonials.ts`** — the three quotes are placeholder text, not real
   families. Replace with quotes you have permission to publish, or delete the
   `<Testimonials />` section from `app/page.tsx`.
 - **`data/programs.ts`** — confirm age bands and staff-to-child ratios against
-  your licence.
+  your license.
 - **`data/faq.ts`** — check each answer against your actual policies.
 - **`components/DailyRhythm.tsx`** — adjust the daily schedule.
 - **`app/about/page.tsx`** — the founder's story and the staff list.
 - **`app/layout.tsx`** — `siteUrl` for the production domain.
+- **`components/StructuredData.tsx`** — mirror the real opening hours here once
+  they are confirmed, so local search shows the right times.
 - **Photography** — the only image in the repo is the logo. Real photos of the
   rooms and (with signed permission) the children will lift the site more than
   anything else on this list.

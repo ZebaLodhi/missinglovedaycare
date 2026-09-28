@@ -1,6 +1,6 @@
 /**
  * PLACEHOLDER PRICING — these weekly rates were invented for the template.
- * Replace every amount with the centre's real tuition before publishing.
+ * Replace every amount with the center's real tuition before publishing.
  */
 export const tuitionPlans = [
   {
@@ -44,7 +44,7 @@ export const included = [
 
 export const feeNotes = [
   { label: "Registration fee", value: "$000, once per family" },
-  { label: "Supply fee", value: "$000, billed each autumn" },
+  { label: "Supply fee", value: "$000, billed each fall" },
   { label: "Sibling discount", value: "0% off the second child" },
   { label: "Late pick-up", value: "$0 per minute after closing" },
 ];

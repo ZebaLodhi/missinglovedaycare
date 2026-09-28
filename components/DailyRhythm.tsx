@@ -1,10 +1,10 @@
 /**
- * TODO: adjust these times and activities to match the centre's real routine.
+ * TODO: adjust these times and activities to match the center's real routine.
  */
 const rhythm = [
   { time: "6:30 – 8:30", title: "Arrival & free play", note: "Health check, hugs, quiet choices at the tables." },
   { time: "8:30 – 9:00", title: "Breakfast", note: "Family-style, everyone helps clear up." },
-  { time: "9:00 – 10:00", title: "Circle & learning centres", note: "Songs, calendar, letters, counting games." },
+  { time: "9:00 – 10:00", title: "Circle & learning centers", note: "Songs, calendar, letters, counting games." },
   { time: "10:00 – 11:15", title: "Outdoor play", note: "Climbing, chalk, water play in summer." },
   { time: "11:30 – 12:15", title: "Lunch", note: "Hot meal with a fruit or vegetable side." },
   { time: "12:30 – 2:30", title: "Rest time", note: "Cots, blankets, soft music — quiet activities for non-nappers." },
