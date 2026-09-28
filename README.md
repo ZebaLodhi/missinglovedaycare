@@ -56,12 +56,12 @@ Search the repo for `TODO` and replace each one:
 - **`app/layout.tsx`** — `siteUrl` for the production domain.
 - **`components/StructuredData.tsx`** — mirror the real opening hours here once
   they are confirmed, so local search shows the right times.
-- **Photography** — `public/images/` holds three supplied photos (the playroom
-  hero, the child with her drawing, and the flower painting used as the footer
-  band). Confirm you hold the rights to use them commercially before launch,
-  and replace them with photos of your own rooms and children (with signed
-  parent permission) when you can — that will lift the site more than anything
-  else on this list.
+- **Photography** — `public/images/` holds three Unsplash photos (the playroom
+  hero, the child with her drawing, and the flower painting cropped into the
+  footer band). The Unsplash license covers free commercial use without
+  attribution. Swapping them for photos of your own rooms and children (with
+  signed parent permission) will still lift the site more than anything else
+  on this list — parents look for the actual room their child would be in.
 
 ## Enrollment form
 
