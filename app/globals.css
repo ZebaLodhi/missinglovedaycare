@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #35637d;
+  --sky: #629aa9;
+  --teal: #4fd1c5;
+  --coral: #f88a71;
+  --sun: #eba452;
+  --cream: #fdf5e0;
+  --cream-deep: #f7f3e8;
+  --ink: #2a3b45;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream-soft text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-navy;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--teal);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3
+           text-base font-bold transition focus-visible:outline-offset-4;
+  }
+
+  .btn-coral {
+    @apply btn bg-coral text-white shadow-soft hover:bg-coral-dark;
+  }
+
+  .btn-navy {
+    @apply btn bg-navy text-white shadow-soft hover:bg-navy-dark;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-navy/25 bg-white/70 text-navy hover:border-navy/60 hover:bg-white;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-teal/15 px-4 py-1.5
+           text-xs font-extrabold uppercase tracking-[0.18em] text-navy;
+  }
+
+  .card {
+    @apply rounded-4xl border border-navy/10 bg-white p-7 shadow-soft;
+  }
+
+  .section {
+    @apply py-16 sm:py-24;
+  }
+}
+
+/* Decorative dotted ring echoing the logo badge. */
+.dotted-ring {
+  border: 2px dashed rgba(53, 99, 125, 0.35);
+}
+
+/* Respect users who prefer less motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-float {
+    animation: none;
+  }
+}
