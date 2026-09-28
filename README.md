@@ -18,6 +18,15 @@ into `tailwind.config.ts`:
 | `cream` | `#FDF5E0` | the badge background                 |
 | `ink`   | `#2A3B45` | body text                            |
 
+## Typography
+
+Headlines are set in **Poppins** and body copy in **Arial**, matching the
+reference design's pairing. The reference sets its headlines in *Castledown
+Heavy*, a commercial Colophon Foundry typeface that cannot be redistributed
+here; Poppins is the closest free match (geometric, same single-storey "a").
+If you license Castledown, swapping it in means editing only the font import
+in `app/layout.tsx` and the `display` stack in `tailwind.config.ts`.
+
 ## Layout
 
 The page structure follows the pattern KinderCare uses: a split hero with the

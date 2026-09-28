@@ -55,8 +55,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-body)", "Nunito", "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
-        display: ["var(--font-display)", "Baloo 2", "system-ui", "sans-serif"],
+        sans: ["Arial", "Helvetica", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Poppins", "Arial", "sans-serif"],
       },
       borderRadius: {
         "4xl": "2.5rem",

@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
-import { Baloo_2, Nunito } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { site } from "@/data/site";
 
-const nunito = Nunito({
+/**
+ * The reference design sets headlines in Castledown Heavy — a commercial
+ * Colophon Foundry face we cannot redistribute. Poppins is the closest free
+ * geometric sans with the same single-storey "a". Body copy is Arial, as on
+ * the reference, which needs no webfont at all.
+ */
+const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-const baloo = Baloo_2({
-  subsets: ["latin"],
-  weight: ["600", "700", "800"],
+  weight: ["500", "600", "700"],
   variable: "--font-display",
   display: "swap",
 });
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${nunito.variable} ${baloo.variable}`}>
+    <html lang="en" className={poppins.variable}>
       <body>
         <a
           href="#main"
