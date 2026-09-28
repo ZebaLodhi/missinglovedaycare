@@ -138,6 +138,10 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
+/**
+ * Kept for re-use: nothing renders this since the home page's testimonial
+ * section was removed in favour of the family timeline.
+ */
 export const featuredTestimonials = testimonials.filter((t) => t.featured);
 
 /** One entry per year that has a pull quote, oldest first — the timeline. */

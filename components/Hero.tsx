@@ -14,10 +14,12 @@ export default function Hero() {
         <div className="flex items-center px-5 py-14 sm:px-8 sm:py-20 lg:py-10 lg:pl-[max(2rem,calc((100vw-72rem)/2))] lg:pr-16">
           <div className="max-w-xl">
             <p className="eyebrow">{site.tagline}</p>
-            <h1 className="mt-4 font-display text-4xl leading-[1.08] sm:text-5xl lg:text-[clamp(2.4rem,3.6vw+0.5rem,3.5rem)]">
-              A second home where
-              <span className="text-coral"> little hearts </span>
-              feel safe
+            <h1 className="mt-4 font-display text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-[clamp(2.2rem,3vw+0.6rem,3rem)]">
+              <span className="block">A Second Home</span>
+              <span className="block">
+                Where <span className="text-coral">Little Hearts</span>
+              </span>
+              <span className="block">Feel Safe</span>
             </h1>
             <p className="mt-5 text-base leading-relaxed text-ink-soft lg:text-lg">
               A licensed early-learning center in {site.address.city}, Virginia for
