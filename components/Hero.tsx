@@ -9,24 +9,24 @@ import { site } from "@/data/site";
  */
 export default function Hero() {
   return (
-    <section className="relative bg-cream-soft">
-      <div className="grid lg:grid-cols-2">
-        <div className="flex items-center px-5 py-14 sm:px-8 sm:py-20 lg:py-24 lg:pl-[max(2rem,calc((100vw-72rem)/2))] lg:pr-16">
+    <section className="relative bg-cream-soft lg:h-[calc(100dvh-5rem-1px)] lg:min-h-[540px] lg:max-h-[900px]">
+      <div className="grid lg:h-full lg:grid-cols-2">
+        <div className="flex items-center px-5 py-14 sm:px-8 sm:py-20 lg:py-10 lg:pl-[max(2rem,calc((100vw-72rem)/2))] lg:pr-16">
           <div className="max-w-xl">
             <p className="eyebrow">{site.tagline}</p>
-            <h1 className="mt-5 font-display text-4xl leading-[1.08] sm:text-5xl xl:text-6xl">
+            <h1 className="mt-4 font-display text-4xl leading-[1.08] sm:text-5xl lg:text-[clamp(2.4rem,3.6vw+0.5rem,3.5rem)]">
               A second home where
               <span className="text-coral"> little hearts </span>
               feel safe
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-ink-soft">
+            <p className="mt-5 text-base leading-relaxed text-ink-soft lg:text-lg">
               A licensed early-learning center in {site.address.city}, Virginia for
               children {site.ageRange} — small groups, familiar faces and a day built
               around play.
             </p>
 
             {site.reviews.show && (
-              <p className="mt-7 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-navy shadow-soft">
+              <p className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-navy shadow-soft">
                 <span className="flex gap-0.5 text-sun" aria-hidden="true">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <svg key={i} width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
@@ -39,7 +39,7 @@ export default function Hero() {
               </p>
             )}
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/contact" className="btn-coral">
                 Book a tour
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -53,7 +53,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative min-h-[360px] sm:min-h-[460px] lg:min-h-[640px]">
+        <div className="relative min-h-[360px] sm:min-h-[460px] lg:h-full lg:min-h-0">
           <Image
             src="/images/playroom-toddler.jpg"
             alt="A toddler exploring toys in a sunlit playroom"
