@@ -2,10 +2,10 @@ import Link from "next/link";
 import { programs } from "@/data/programs";
 
 const accentStyles = {
-  teal: { chip: "bg-teal/20 text-teal-dark", bar: "bg-teal" },
-  coral: { chip: "bg-coral/20 text-coral-dark", bar: "bg-coral" },
-  sun: { chip: "bg-sun/25 text-sun-dark", bar: "bg-sun" },
-  sky: { chip: "bg-sky/20 text-navy", bar: "bg-sky" },
+  teal: { chip: "bg-teal/30 text-teal-dark", bar: "bg-teal", card: "bg-teal/5" },
+  coral: { chip: "bg-coral/20 text-coral-dark", bar: "bg-coral", card: "bg-coral/5" },
+  sun: { chip: "bg-sun/35 text-sun-dark", bar: "bg-sun", card: "bg-sun/10" },
+  sky: { chip: "bg-sky/30 text-navy-dark", bar: "bg-sky", card: "bg-sky/5" },
 } as const;
 
 export default function ProgramCards({ showIntro = true }: { showIntro?: boolean }) {
@@ -27,7 +27,11 @@ export default function ProgramCards({ showIntro = true }: { showIntro?: boolean
           {programs.map((p) => {
             const accent = accentStyles[p.accent];
             return (
-              <article key={p.slug} id={p.slug} className="card scroll-mt-28 overflow-hidden">
+              <article
+                key={p.slug}
+                id={p.slug}
+                className={`card scroll-mt-28 overflow-hidden ${accent.card}`}
+              >
                 <span className={`mb-5 block h-1.5 w-16 rounded-full ${accent.bar}`} />
                 <div className="flex flex-wrap items-center gap-3">
                   <h3 className="text-2xl">{p.name}</h3>

@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --navy: #35637d;
-  --sky: #629aa9;
-  --teal: #4fd1c5;
-  --coral: #f88a71;
-  --sun: #eba452;
-  --cream: #fdf5e0;
-  --cream-deep: #f7f3e8;
-  --ink: #2a3b45;
+  --navy: #2f6c8f;
+  --sky: #4fb8d6;
+  --teal: #2bd9c9;
+  --coral: #ee5236;
+  --sun: #ffb020;
+  --cream: #fff4da;
+  --cream-deep: #ffefce;
+  --ink: #22333d;
 }
 
 @layer base {
@@ -46,8 +46,9 @@
            text-base font-bold transition focus-visible:outline-offset-4;
   }
 
+  /* Uses coral-dark so white label text clears 4.5:1 against it. */
   .btn-coral {
-    @apply btn bg-coral text-white shadow-soft hover:bg-coral-dark;
+    @apply btn bg-coral-dark text-white shadow-soft hover:bg-[#A8301A];
   }
 
   .btn-navy {
@@ -59,8 +60,8 @@
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full bg-teal/15 px-4 py-1.5
-           text-xs font-extrabold uppercase tracking-[0.18em] text-navy;
+    @apply inline-flex items-center gap-2 rounded-full bg-teal/30 px-4 py-1.5
+           text-xs font-extrabold uppercase tracking-[0.18em] text-navy-dark;
   }
 
   .card {
@@ -74,7 +75,7 @@
 
 /* Decorative dotted ring echoing the logo badge. */
 .dotted-ring {
-  border: 2px dashed rgba(53, 99, 125, 0.35);
+  border: 2px dashed rgba(47, 108, 143, 0.4);
 }
 
 /* Respect users who prefer less motion. */

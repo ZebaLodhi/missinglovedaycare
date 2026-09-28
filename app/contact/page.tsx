@@ -17,7 +17,7 @@ export default function ContactPage() {
         intro="Send a note and we will reply within one business day — usually sooner. Prefer to talk? Call us; a person answers the phone."
       />
 
-      <section className="section bg-cream-soft">
+      <section className="section bg-teal/10">
         <div className="wrap grid gap-10 lg:grid-cols-[1fr_1.2fr]">
           <div className="space-y-6">
             <div className="card">

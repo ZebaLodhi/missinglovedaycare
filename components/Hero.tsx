@@ -9,7 +9,7 @@ import { site } from "@/data/site";
  */
 export default function Hero() {
   return (
-    <section className="relative bg-cream-soft lg:h-[calc(100dvh-5rem-1px)] lg:min-h-[540px] lg:max-h-[900px]">
+    <section className="relative bg-cream lg:h-[calc(100dvh-5rem-1px)] lg:min-h-[540px] lg:max-h-[900px]">
       <div className="grid lg:h-full lg:grid-cols-2">
         <div className="flex items-center px-5 py-14 sm:px-8 sm:py-20 lg:py-10 lg:pl-[max(2rem,calc((100vw-72rem)/2))] lg:pr-16">
           <div className="max-w-xl">

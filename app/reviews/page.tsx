@@ -18,12 +18,12 @@ export default function ReviewsPage() {
         intro={`${site.reviews.recommendPercent}% of ${site.reviews.count} families recommend us on ${site.reviews.source}. These are their own words, in the order they were written.`}
       />
 
-      <section className="section bg-cream-soft">
+      <section className="section bg-teal/10">
         <div className="wrap">
           <ul className="columns-1 gap-6 md:columns-2 lg:columns-3">
             {testimonials.map((t) => (
               <li key={t.name + t.date} className="card mb-6 break-inside-avoid">
-                <span className="inline-flex items-center gap-1.5 rounded-full bg-teal/15 px-3 py-1 text-xs font-bold text-teal-dark">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-teal/25 px-3 py-1 text-xs font-bold text-teal-dark">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                     <path d="M12 20s-7-4.4-7-9a4 4 0 017-2.6A4 4 0 0119 11c0 4.6-7 9-7 9z" />
                   </svg>

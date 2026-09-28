@@ -15,43 +15,43 @@ const config: Config = {
       colors: {
         // "DAYCARE" wordmark blue — headings, navigation, footer
         navy: {
-          DEFAULT: "#35637D",
-          light: "#47788F",
-          dark: "#274B60",
+          DEFAULT: "#2F6C8F",
+          light: "#3E8AB4",
+          dark: "#215472",
         },
-        // "MISSING LOVE" arc blue — softer secondary blue
+        // "MISSING LOVE" arc blue — brighter secondary blue
         sky: {
-          DEFAULT: "#629AA9",
-          light: "#8FBAC5",
-          dark: "#4A7E8D",
+          DEFAULT: "#4FB8D6",
+          light: "#8AD6EA",
+          dark: "#21748C",
         },
         // Brand-sheet teal — buttons, highlights, pattern
         teal: {
-          DEFAULT: "#4FD1C5",
-          light: "#7FE0D7",
-          dark: "#36AFA4",
+          DEFAULT: "#2BD9C9",
+          light: "#7FF0E4",
+          dark: "#0A8177",
         },
-        // The heart — primary call-to-action color
+        // The heart — primary call-to-action colour
         coral: {
-          DEFAULT: "#F88A71",
-          light: "#FCA795",
-          dark: "#E06A50",
+          DEFAULT: "#EE5236",
+          light: "#FF8168",
+          dark: "#C93A1F",
         },
         // Sunny accents — stars, the yellow dress
         sun: {
-          DEFAULT: "#EBA452",
-          light: "#F6C489",
-          dark: "#CF8836",
+          DEFAULT: "#FFB020",
+          light: "#FFD070",
+          dark: "#9C6200",
         },
         // Paper backgrounds from the logo badge
         cream: {
-          DEFAULT: "#FDF5E0",
-          deep: "#F7F3E8",
-          soft: "#FFFCF5",
+          DEFAULT: "#FFF4DA",
+          deep: "#FFEFCE",
+          soft: "#FFFDF7",
         },
         ink: {
-          DEFAULT: "#2A3B45",
-          soft: "#55686F",
+          DEFAULT: "#22333D",
+          soft: "#4C5F68",
         },
       },
       fontFamily: {

@@ -35,7 +35,7 @@ export default function AboutPage() {
         intro={`${site.name} grew out of a simple belief: children learn fastest when they feel safe, seen and genuinely liked. That is the whole philosophy — the rest is snacks, songs and sand.`}
       />
 
-      <section className="section bg-cream-soft">
+      <section className="section bg-teal/10">
         <div className="wrap grid items-center gap-12 lg:grid-cols-2">
           <div className="relative mx-auto w-full max-w-sm">
             <div className="dotted-ring rounded-full p-4">

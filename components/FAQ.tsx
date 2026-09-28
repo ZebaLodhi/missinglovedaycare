@@ -2,7 +2,7 @@ import { faqs } from "@/data/faq";
 
 export default function FAQ() {
   return (
-    <section className="section bg-cream-soft">
+    <section className="section bg-sun/10">
       <div className="wrap grid gap-10 lg:grid-cols-[1fr_1.4fr]">
         <div>
           <p className="eyebrow">Good to know</p>

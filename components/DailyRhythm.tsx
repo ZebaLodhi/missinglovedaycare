@@ -15,7 +15,7 @@ const rhythm = [
 
 export default function DailyRhythm() {
   return (
-    <section className="section bg-cream-soft">
+    <section className="section bg-sky/10">
       <div className="wrap">
         <div className="max-w-2xl">
           <p className="eyebrow">A day with us</p>

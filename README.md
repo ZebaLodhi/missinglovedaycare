@@ -10,13 +10,19 @@ into `tailwind.config.ts`:
 
 | Token   | Hex       | Where it comes from                  |
 | ------- | --------- | ------------------------------------ |
-| `navy`  | `#35637D` | the "DAYCARE" wordmark               |
-| `sky`   | `#629AA9` | the "MISSING LOVE" arc               |
-| `teal`  | `#4FD1C5` | brand-sheet accent / pattern         |
-| `coral` | `#F88A71` | the heart                            |
-| `sun`   | `#EBA452` | stars and the yellow dress           |
-| `cream` | `#FDF5E0` | the badge background                 |
-| `ink`   | `#2A3B45` | body text                            |
+| `navy`  | `#2F6C8F` | the "DAYCARE" wordmark               |
+| `sky`   | `#4FB8D6` | the "MISSING LOVE" arc               |
+| `teal`  | `#2BD9C9` | brand-sheet accent / pattern         |
+| `coral` | `#EE5236` | the heart                            |
+| `sun`   | `#FFB020` | stars and the yellow dress           |
+| `cream` | `#FFF4DA` | the badge background                 |
+| `ink`   | `#22333D` | body text                            |
+
+The hues are the logo's, pushed up in saturation so they read as bright on
+screen. Each `-dark` variant is the one to use for text or icons: those were
+picked to clear WCAG AA contrast on white and cream (for example `coral-dark`
+`#C93A1F` at 5.1:1), which the lighter brand hues do not. `.btn-coral` uses
+`coral-dark` as its fill for the same reason.
 
 ## Typography
 

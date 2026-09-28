@@ -41,7 +41,7 @@ export default function TuitionPage() {
         intro="Tuition covers meals, materials and every activity in the day. Rates are reviewed each year — please confirm current pricing with the office."
       />
 
-      <section className="section bg-cream-soft">
+      <section className="section bg-teal/10">
         <div className="wrap">
           <div className="overflow-hidden rounded-4xl border border-navy/10 bg-white shadow-soft">
             <table className="w-full text-left">
