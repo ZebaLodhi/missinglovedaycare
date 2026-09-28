@@ -12,7 +12,7 @@ export default function ProgramCards({ showIntro = true }: { showIntro?: boolean
   return (
     <section className="section bg-cream">
       <div className="wrap">
-        {showIntro && (
+        {showIntro ? (
           <div className="max-w-2xl">
             <p className="eyebrow">Our programs</p>
             <h2 className="mt-4 text-3xl sm:text-4xl">A room for every stage</h2>
@@ -21,6 +21,9 @@ export default function ProgramCards({ showIntro = true }: { showIntro?: boolean
               they keep seeing familiar faces the whole way through.
             </p>
           </div>
+        ) : (
+          // Keeps the heading order h1 → h2 → h3 when the page supplies its own intro.
+          <h2 className="sr-only">Our programs</h2>
         )}
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">

@@ -47,7 +47,7 @@ export default function LocationBand() {
 
         <div className="lg:justify-self-end">
           <Link href="/contact" className="btn-coral w-full sm:w-auto">
-            Schedule a visit
+            Schedule a tour
           </Link>
         </div>
       </div>

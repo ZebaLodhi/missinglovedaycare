@@ -37,7 +37,7 @@ export default function Hero() {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/contact" className="btn-coral">
-                Book a tour
+                Schedule a tour
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>

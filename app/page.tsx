@@ -5,6 +5,7 @@ import Values from "@/components/Values";
 import ProgramCards from "@/components/ProgramCards";
 import ContentImageBlock from "@/components/ContentImageBlock";
 import DailyRhythm from "@/components/DailyRhythm";
+import FamilyTimeline from "@/components/FamilyTimeline";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
@@ -33,6 +34,7 @@ export default function HomePage() {
       />
 
       <DailyRhythm />
+      <FamilyTimeline />
       <Testimonials />
       <FAQ />
       <CTA />

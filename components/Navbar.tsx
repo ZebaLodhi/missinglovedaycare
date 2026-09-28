@@ -26,7 +26,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   aria-current={active ? "page" : undefined}
-                  className={`rounded-full px-4 py-2 text-sm font-bold transition ${
+                  className={`flex min-h-[44px] items-center rounded-full px-4 text-sm font-bold transition ${
                     active ? "bg-teal/20 text-navy" : "text-ink-soft hover:bg-teal/10 hover:text-navy"
                   }`}
                 >
@@ -39,7 +39,7 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <Link href="/contact" className="btn-coral !py-2.5 !text-sm">
-            Book a tour
+            Schedule a tour
           </Link>
         </div>
 
@@ -64,7 +64,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block rounded-2xl px-3 py-3 text-base font-bold text-navy hover:bg-teal/10"
+                  className="flex min-h-[48px] items-center rounded-2xl px-3 text-base font-bold text-navy hover:bg-teal/10"
                 >
                   {link.label}
                 </Link>
@@ -72,7 +72,7 @@ export default function Navbar() {
             ))}
             <li className="px-3 pb-3 pt-2">
               <Link href="/contact" className="btn-coral w-full">
-                Book a tour
+                Schedule a tour
               </Link>
             </li>
             <li className="px-3 pb-4 text-sm font-semibold text-ink-soft">

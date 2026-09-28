@@ -32,7 +32,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <Link href={link.href} className="text-cream/80 transition hover:text-teal-light">
+                <Link href={link.href} className="inline-flex min-h-[44px] items-center text-cream/80 transition hover:text-teal-light">
                   {link.label}
                 </Link>
               </li>
@@ -74,12 +74,18 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-cream/15">
+      {/* Extra bottom padding on phones so the fixed call bar never covers this. */}
+      <div className="border-t border-cream/15 pb-20 md:pb-0">
         <div className="wrap flex flex-col gap-2 py-6 text-xs text-cream/70 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} {site.name}. {site.tagline}.
           </p>
-          {site.licenseNumber && <p>License #{site.licenseNumber}</p>}
+          <p className="flex flex-wrap items-center gap-x-4 gap-y-1">
+            <Link href="/privacy" className="transition hover:text-teal-light">
+              Privacy
+            </Link>
+            {site.licenseNumber && <span>License #{site.licenseNumber}</span>}
+          </p>
         </div>
       </div>
     </footer>

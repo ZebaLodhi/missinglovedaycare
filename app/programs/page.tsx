@@ -8,7 +8,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Programs",
-  description: `Infant, toddler, preschool and after-school programs for children ${site.ageRange} at ${site.name}.`,
+  description: `Infant, toddler, preschool and after-school care for children ${site.ageRange} in Chantilly, VA. Small groups, low ratios and a day built around play at ${site.name}.`,
 };
 
 export default function ProgramsPage() {

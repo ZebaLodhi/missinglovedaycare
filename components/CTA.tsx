@@ -17,7 +17,7 @@ export default function CTA() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link href="/contact" className="btn-coral">
-                Request a tour
+                Schedule a tour
               </Link>
               <a href={site.phoneHref} className="btn bg-white/95 text-navy hover:bg-white">
                 Call {site.phone}

@@ -42,6 +42,18 @@ full-bleed colour band (`components/ContentImageBlock.tsx`), and a decorative
 illustration band above the footer. All copy, colour and artwork are this
 centre's own.
 
+## The family timeline
+
+`components/FamilyTimeline.tsx` is the site's signature section: a scrollable
+track of years built from the real review dates, one verbatim extract per year
+from 2016 to 2025. It reads its years and pull quotes straight out of
+`data/testimonials.ts`, so adding a review with a `pullQuote` for a new year
+extends the timeline automatically.
+
+Every `pullQuote` must be an exact substring of that review's `quote` — never
+paraphrase a parent. The years and the "N years" figure are derived, not typed,
+so they cannot drift out of date.
+
 ## Running locally
 
 ```bash
@@ -69,6 +81,10 @@ Search the repo for `TODO` and replace each one:
 - **`components/DailyRhythm.tsx`** — adjust the daily schedule.
 - **`app/about/page.tsx`** — the founder's story and the staff list.
 - **`app/layout.tsx`** — `siteUrl` for the production domain.
+- **`app/privacy/page.tsx`** — a short, honest privacy note covering the
+  website form. Have it checked against your enrolment paperwork and Virginia
+  licensing requirements; it deliberately does not speak for the records you
+  keep about enrolled children.
 - **`components/StructuredData.tsx`** — mirror the real opening hours here once
   they are confirmed, so local search shows the right times.
 - **Photography** — `public/images/` holds three Unsplash photos (the playroom

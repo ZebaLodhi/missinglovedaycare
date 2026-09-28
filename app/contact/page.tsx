@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Contact & tours",
-  description: `Book a tour, ask about openings or call ${site.name} at ${site.phone}.`,
+  description: `Schedule a tour of ${site.name} in Chantilly, VA, ask about openings for your child, or call us on ${site.phone}. We reply within one business day.`,
 };
 
 export default function ContactPage() {

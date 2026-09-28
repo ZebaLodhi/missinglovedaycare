@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "About us",
-  description: `Meet the team behind ${site.name} and the ideas that shape our days — small groups, gentle routines and learning through play.`,
+  description: `Meet the team behind ${site.name} in Chantilly, VA, and the ideas that shape our days — small groups, gentle routines, safety you can check, and learning through play.`,
 };
 
 /** TODO: replace with the real staff list, photos and credentials. */

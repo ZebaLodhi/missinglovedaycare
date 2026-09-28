@@ -7,7 +7,7 @@ import { tuitionPlans, included, feeNotes } from "@/data/tuition";
 export const metadata: Metadata = {
   title: "Tuition & enrollment",
   description:
-    "Weekly tuition, what it includes, and the three steps to enrolling your child at Missing Love Daycare.",
+    "Weekly tuition by program, what it covers — meals, materials and every activity — and the three steps to enrolling your child at Missing Love Daycare in Chantilly, VA.",
 };
 
 const accentBar = {
@@ -125,7 +125,7 @@ export default function TuitionPage() {
 
           <div className="mt-10">
             <Link href="/contact" className="btn-navy">
-              Start with a tour
+              Schedule a tour
             </Link>
           </div>
         </div>

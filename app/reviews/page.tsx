@@ -6,7 +6,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Parent reviews",
-  description: `What families say about ${site.name} — ${site.reviews.recommendPercent}% of ${site.reviews.count} reviewers on ${site.reviews.source} recommend us.`,
+  description: `What families say about ${site.name} in Chantilly, VA — ${site.reviews.recommendPercent}% of ${site.reviews.count} reviewers on ${site.reviews.source} recommend us, in reviews going back to 2016.`,
 };
 
 export default function ReviewsPage() {

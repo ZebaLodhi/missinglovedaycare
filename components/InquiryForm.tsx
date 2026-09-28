@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { programs } from "@/data/programs";
 
@@ -113,11 +114,16 @@ export default function InquiryForm() {
       )}
 
       <button type="submit" disabled={status === "sending"} className="btn-coral w-full disabled:opacity-60">
-        {status === "sending" ? "Sending…" : "Request a tour"}
+        {status === "sending" ? "Sending…" : "Schedule a tour"}
       </button>
 
       <p className="text-center text-xs text-ink-soft">
-        We only use your details to answer your enquiry.
+        We only use your details to answer your enquiry — never for anything else. See
+        our{" "}
+        <Link href="/privacy" className="font-bold text-navy underline underline-offset-2">
+          privacy note
+        </Link>
+        . Please send only your child&apos;s first name.
       </p>
     </form>
   );
