@@ -27,13 +27,9 @@ export default function Hero() {
 
             {site.reviews.show && (
               <p className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-bold text-navy shadow-soft">
-                <span className="flex gap-0.5 text-sun" aria-hidden="true">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <svg key={i} width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 4l2.3 4.7 5.2.8-3.8 3.6.9 5.1-4.6-2.4-4.6 2.4.9-5.1L4.5 9.5l5.2-.8L12 4z" />
-                    </svg>
-                  ))}
-                </span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" className="text-coral" aria-hidden="true">
+                  <path d="M12 20s-7-4.4-7-9a4 4 0 017-2.6A4 4 0 0119 11c0 4.6-7 9-7 9z" />
+                </svg>
                 {site.reviews.recommendPercent}% of {site.reviews.count} families on{" "}
                 {site.reviews.source} recommend us
               </p>
