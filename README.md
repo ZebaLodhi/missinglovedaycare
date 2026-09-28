@@ -18,6 +18,15 @@ into `tailwind.config.ts`:
 | `cream` | `#FDF5E0` | the badge background                 |
 | `ink`   | `#2A3B45` | body text                            |
 
+## Layout
+
+The page structure follows the pattern KinderCare uses: a split hero with the
+photograph on one side and the headline on a colour block, a location band
+directly beneath it, alternating image/text blocks whose text sits on a
+full-bleed colour band (`components/ContentImageBlock.tsx`), and a decorative
+illustration band above the footer. All copy, colour and artwork are this
+centre's own.
+
 ## Running locally
 
 ```bash
@@ -47,9 +56,12 @@ Search the repo for `TODO` and replace each one:
 - **`app/layout.tsx`** — `siteUrl` for the production domain.
 - **`components/StructuredData.tsx`** — mirror the real opening hours here once
   they are confirmed, so local search shows the right times.
-- **Photography** — the only image in the repo is the logo. Real photos of the
-  rooms and (with signed permission) the children will lift the site more than
-  anything else on this list.
+- **Photography** — `public/images/` holds three supplied photos (the playroom
+  hero, the child with her drawing, and the flower painting used as the footer
+  band). Confirm you hold the rights to use them commercially before launch,
+  and replace them with photos of your own rooms and children (with signed
+  parent permission) when you can — that will lift the site more than anything
+  else on this list.
 
 ## Enrollment form
 

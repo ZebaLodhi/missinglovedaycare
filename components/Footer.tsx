@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Logo from "./Logo";
 import { navLinks, site } from "@/data/site";
@@ -5,6 +6,17 @@ import { navLinks, site } from "@/data/site";
 export default function Footer() {
   return (
     <footer className="mt-8 bg-navy text-cream">
+      {/* A child's painting as the band across the top of the footer. */}
+      <div className="relative h-40 w-full overflow-hidden bg-cream-soft sm:h-56 lg:h-72">
+        <Image
+          src="/images/flower-band.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-top"
+        />
+      </div>
+
       <div className="wrap grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-4">
           <div className="rounded-3xl bg-cream-soft/95 p-3 inline-block">
