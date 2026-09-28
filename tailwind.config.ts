@@ -13,50 +13,50 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // "DAYCARE" wordmark blue — headings, navigation, footer
+        // Deep teal-navy from the reference headline — headings and body accents
         navy: {
-          DEFAULT: "#2F6C8F",
-          light: "#3E8AB4",
-          dark: "#215472",
+          DEFAULT: "#0D4856",
+          light: "#1D6274",
+          dark: "#08333E",
         },
-        // "MISSING LOVE" arc blue — brighter secondary blue
+        // Soft blue, kept for programme accents
         sky: {
-          DEFAULT: "#4FB8D6",
-          light: "#8AD6EA",
-          dark: "#21748C",
+          DEFAULT: "#8FC9DC",
+          light: "#CDE9F2",
+          dark: "#2A7893",
         },
-        // Brand-sheet teal — buttons, highlights, pattern
+        // Mint — blobs, icon badges, the pattern of dots
         teal: {
-          DEFAULT: "#2BD9C9",
-          light: "#7FF0E4",
-          dark: "#0A8177",
+          DEFAULT: "#7FD4C4",
+          light: "#D6F1E8",
+          dark: "#2F7D74",
         },
-        // The heart — primary call-to-action colour
+        // Coral — the heart, primary buttons, the highlighted words
         coral: {
-          DEFAULT: "#EE5236",
-          light: "#FF8168",
-          dark: "#C93A1F",
+          DEFAULT: "#F4584F",
+          light: "#FBA79F",
+          dark: "#C8362D",
         },
-        // Sunny accents — stars, the yellow dress
+        // Warm amber — stars, sparkles, the yellow dress
         sun: {
-          DEFAULT: "#FFB020",
-          light: "#FFD070",
-          dark: "#9C6200",
+          DEFAULT: "#FCC477",
+          light: "#FDE5C2",
+          dark: "#96620B",
         },
-        // Paper backgrounds from the logo badge
+        // Warm paper
         cream: {
-          DEFAULT: "#FFF4DA",
-          deep: "#FFEFCE",
-          soft: "#FFFDF7",
+          DEFAULT: "#FBF8EE",
+          deep: "#F6F0E0",
+          soft: "#FFFDF8",
         },
         ink: {
-          DEFAULT: "#22333D",
-          soft: "#4C5F68",
+          DEFAULT: "#25424B",
+          soft: "#55707A",
         },
       },
       fontFamily: {
-        sans: ["Arial", "Helvetica", "system-ui", "sans-serif"],
-        display: ["var(--font-display)", "Poppins", "Arial", "sans-serif"],
+        sans: ["var(--font-body)", "Nunito", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Baloo 2", "system-ui", "sans-serif"],
       },
       borderRadius: {
         "4xl": "2.5rem",

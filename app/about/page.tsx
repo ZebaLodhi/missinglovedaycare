@@ -39,7 +39,7 @@ export default function AboutPage() {
         <div className="wrap grid items-center gap-12 lg:grid-cols-2">
           <div className="relative mx-auto w-full max-w-sm">
             <div className="dotted-ring rounded-full p-4">
-              <div className="relative aspect-square overflow-hidden rounded-full bg-cream shadow-lift">
+              <div className="blob-b relative aspect-square overflow-hidden bg-cream shadow-lift">
                 <Image
                   src="/brand/missing-love-daycare-badge.jpg"
                   alt={`${site.name} logo`}

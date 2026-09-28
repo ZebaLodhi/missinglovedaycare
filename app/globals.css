@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --navy: #2f6c8f;
-  --sky: #4fb8d6;
-  --teal: #2bd9c9;
-  --coral: #ee5236;
-  --sun: #ffb020;
-  --cream: #fff4da;
-  --cream-deep: #ffefce;
-  --ink: #22333d;
+  --navy: #0d4856;
+  --sky: #8fc9dc;
+  --teal: #7fd4c4;
+  --coral: #f4584f;
+  --sun: #fcc477;
+  --cream: #fbf8ee;
+  --cream-deep: #f6f0e0;
+  --ink: #25424b;
 }
 
 @layer base {
@@ -46,9 +46,10 @@
            text-base font-bold transition focus-visible:outline-offset-4;
   }
 
-  /* Uses coral-dark so white label text clears 4.5:1 against it. */
+  /* Uses coral-dark so white label text clears 4.5:1 against it — the
+     reference's lighter coral sits at 3.3:1, which is not readable enough. */
   .btn-coral {
-    @apply btn bg-coral-dark text-white shadow-soft hover:bg-[#A8301A];
+    @apply btn bg-coral-dark text-white shadow-soft hover:bg-[#A82B23];
   }
 
   .btn-navy {
@@ -56,16 +57,16 @@
   }
 
   .btn-outline {
-    @apply btn border-2 border-navy/25 bg-white/70 text-navy hover:border-navy/60 hover:bg-white;
+    @apply btn border-2 border-teal-dark/45 bg-white/70 text-navy hover:border-teal-dark hover:bg-white;
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full bg-teal/30 px-4 py-1.5
-           text-xs font-extrabold uppercase tracking-[0.18em] text-navy-dark;
+    @apply inline-flex items-center gap-2 rounded-full bg-teal-light px-4 py-1.5
+           text-xs font-extrabold uppercase tracking-[0.16em] text-navy;
   }
 
   .card {
-    @apply rounded-4xl border border-navy/10 bg-white p-7 shadow-soft;
+    @apply rounded-[2rem] border border-navy/5 bg-white p-7 shadow-soft;
   }
 
   .section {
@@ -75,7 +76,20 @@
 
 /* Decorative dotted ring echoing the logo badge. */
 .dotted-ring {
-  border: 2px dashed rgba(47, 108, 143, 0.4);
+  border: 2px dashed rgba(13, 72, 86, 0.28);
+}
+
+/* Organic photo shapes from the reference — soft, never a plain rectangle. */
+.blob-a {
+  border-radius: 58% 42% 46% 54% / 46% 52% 48% 54%;
+}
+
+.blob-b {
+  border-radius: 46% 54% 58% 42% / 54% 46% 54% 46%;
+}
+
+.blob-c {
+  border-radius: 52% 48% 42% 58% / 48% 56% 44% 52%;
 }
 
 /* Respect users who prefer less motion. */

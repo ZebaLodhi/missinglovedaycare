@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
+import { CalendarIcon } from "./Doodles";
 import { navLinks, site } from "@/data/site";
 
 export default function Navbar() {
@@ -39,6 +40,7 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <Link href="/contact" className="btn-coral !py-2.5 !text-sm">
+            <CalendarIcon className="h-4 w-4" />
             Schedule a tour
           </Link>
         </div>
@@ -72,6 +74,7 @@ export default function Navbar() {
             ))}
             <li className="px-3 pb-3 pt-2">
               <Link href="/contact" className="btn-coral w-full">
+                <CalendarIcon className="h-4 w-4" />
                 Schedule a tour
               </Link>
             </li>

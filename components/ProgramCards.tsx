@@ -15,7 +15,7 @@ export default function ProgramCards({ showIntro = true }: { showIntro?: boolean
         {showIntro ? (
           <div className="max-w-2xl">
             <p className="eyebrow">Our programs</p>
-            <h2 className="mt-4 text-3xl sm:text-4xl">A room for every stage</h2>
+            <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">A room for every stage</h2>
             <p className="mt-4 text-lg text-ink-soft">
               Children move up when they are ready, not when the calendar says so — and
               they keep seeing familiar faces the whole way through.

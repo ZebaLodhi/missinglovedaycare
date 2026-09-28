@@ -10,7 +10,7 @@ export default function CTA() {
           <div aria-hidden className="pointer-events-none absolute -bottom-20 -right-10 h-64 w-64 rounded-full bg-coral/25 blur-2xl" />
 
           <div className="relative mx-auto max-w-2xl">
-            <h2 className="text-3xl text-cream sm:text-4xl">Come see the rooms for yourself</h2>
+            <h2 className="font-display text-3xl font-bold text-cream sm:text-4xl">Come see the rooms for yourself</h2>
             <p className="mt-4 text-lg text-cream/80">
               Tours run most weekday mornings while the children are busy. Bring your
               little one — we would love to meet them.

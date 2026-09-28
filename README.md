@@ -10,37 +10,36 @@ into `tailwind.config.ts`:
 
 | Token   | Hex       | Where it comes from                  |
 | ------- | --------- | ------------------------------------ |
-| `navy`  | `#2F6C8F` | the "DAYCARE" wordmark               |
-| `sky`   | `#4FB8D6` | the "MISSING LOVE" arc               |
-| `teal`  | `#2BD9C9` | brand-sheet accent / pattern         |
-| `coral` | `#EE5236` | the heart                            |
-| `sun`   | `#FFB020` | stars and the yellow dress           |
-| `cream` | `#FFF4DA` | the badge background                 |
-| `ink`   | `#22333D` | body text                            |
+| `navy`  | `#0D4856` | headings and body accents            |
+| `teal`  | `#7FD4C4` | mint blobs, icon badges, dot grids   |
+| `coral` | `#F4584F` | the heart, buttons, highlighted words|
+| `sun`   | `#FCC477` | stars, sparkles                      |
+| `sky`   | `#8FC9DC` | programme accents                    |
+| `cream` | `#FBF8EE` | the warm paper background            |
+| `ink`   | `#25424B` | body text                            |
 
-The hues are the logo's, pushed up in saturation so they read as bright on
-screen. Each `-dark` variant is the one to use for text or icons: those were
-picked to clear WCAG AA contrast on white and cream (for example `coral-dark`
-`#C93A1F` at 5.1:1), which the lighter brand hues do not. `.btn-coral` uses
-`coral-dark` as its fill for the same reason.
+Sampled from the reference design. Each `-dark` variant is the one to use for
+text or icons — they clear WCAG AA where the soft brand hues do not. `.btn-coral`
+fills with `coral-dark` for that reason: the reference's own coral sits at 3.3:1
+against white text, which is not readable enough.
 
 ## Typography
 
-Headlines are set in **Poppins** and body copy in **Arial**, matching the
-reference design's pairing. The reference sets its headlines in *Castledown
-Heavy*, a commercial Colophon Foundry typeface that cannot be redistributed
-here; Poppins is the closest free match (geometric, same single-storey "a").
-If you license Castledown, swapping it in means editing only the font import
-in `app/layout.tsx` and the `display` stack in `tailwind.config.ts`.
+Headlines are set in **Baloo 2** and body copy in **Nunito** — rounded, warm
+and close to the reference design's lettering. Both load through `next/font`
+in `app/layout.tsx`; the stacks live in `tailwind.config.ts`.
 
-## Layout
+## Layout and style
 
-The page structure follows the pattern KinderCare uses: a split hero with the
-photograph on one side and the headline on a colour block, a location band
-directly beneath it, alternating image/text blocks whose text sits on a
-full-bleed colour band (`components/ContentImageBlock.tsx`), and a decorative
-illustration band above the footer. All copy, colour and artwork are this
-centre's own.
+The look follows the supplied reference: a warm cream ground, photographs
+masked into organic blob shapes rather than rectangles (`.blob-a/b/c` in
+`app/globals.css`), the logo badge overlapping the hero photo, and hand-drawn
+accents — hearts, sparkles, stars, dot grids — from `components/Doodles.tsx`.
+
+The home page opens with the hero and the four-point reassurance strip
+(`components/TrustStrip.tsx`) sharing one screen, then a location band,
+alternating image/text blocks (`components/ContentImageBlock.tsx`), the daily
+rhythm, the family timeline and the FAQ.
 
 ## The family timeline
 

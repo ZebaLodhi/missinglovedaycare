@@ -19,7 +19,7 @@ export default function DailyRhythm() {
       <div className="wrap">
         <div className="max-w-2xl">
           <p className="eyebrow">A day with us</p>
-          <h2 className="mt-4 text-3xl sm:text-4xl">Predictable days, room to wander</h2>
+          <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">Predictable days, room to wander</h2>
           <p className="mt-4 text-lg text-ink-soft">
             Young children relax when they know what comes next. This is the shape of a
             typical preschool day — infant and toddler rooms follow each child&apos;s own rhythm.

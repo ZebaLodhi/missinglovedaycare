@@ -31,7 +31,7 @@ export default function Values() {
       <div className="wrap">
         <div className="max-w-2xl">
           <p className="eyebrow">Why families stay</p>
-          <h2 className="mt-4 text-3xl sm:text-4xl">Care you can picture from the parking lot</h2>
+          <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">Care you can picture from the parking lot</h2>
           <p className="mt-4 text-lg text-ink-soft">
             The name came from a simple idea: no child should ever feel like love is the
             thing missing from their day.

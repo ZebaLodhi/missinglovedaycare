@@ -1,5 +1,6 @@
 import StructuredData from "@/components/StructuredData";
 import Hero from "@/components/Hero";
+import TrustStrip from "@/components/TrustStrip";
 import LocationBand from "@/components/LocationBand";
 import Values from "@/components/Values";
 import ProgramCards from "@/components/ProgramCards";
@@ -13,7 +14,12 @@ export default function HomePage() {
   return (
     <>
       <StructuredData />
-      <Hero />
+
+      {/* Hero and the reassurance strip together fill the first screen. */}
+      <div className="lg:flex lg:h-[calc(100dvh-5rem-1px)] lg:min-h-[600px] lg:max-h-[940px] lg:flex-col">
+        <Hero />
+        <TrustStrip />
+      </div>
       <LocationBand />
       <Values />
       <ProgramCards />

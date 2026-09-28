@@ -6,7 +6,7 @@ export default function FAQ() {
       <div className="wrap grid gap-10 lg:grid-cols-[1fr_1.4fr]">
         <div>
           <p className="eyebrow">Good to know</p>
-          <h2 className="mt-4 text-3xl sm:text-4xl">Questions parents ask first</h2>
+          <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">Questions parents ask first</h2>
           <p className="mt-4 text-ink-soft">
             Anything we have not covered? Call us — a person answers the phone.
           </p>

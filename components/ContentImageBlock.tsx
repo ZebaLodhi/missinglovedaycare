@@ -38,7 +38,7 @@ export default function ContentImageBlock({
           />
           <div className={`relative ${reverse ? "lg:pl-4" : "lg:pr-4"}`}>
             <p className="eyebrow">{eyebrow}</p>
-            <h2 className="mt-4 text-3xl sm:text-4xl">{title}</h2>
+            <h2 className="mt-4 font-display text-3xl font-bold sm:text-4xl">{title}</h2>
             <p className="mt-5 text-lg leading-relaxed text-ink-soft">{body}</p>
 
             {points && (
@@ -62,7 +62,7 @@ export default function ContentImageBlock({
           </div>
         </div>
 
-        <div className="relative aspect-[4/3] overflow-hidden rounded-4xl shadow-lift">
+        <div className={`blob-${reverse ? "c" : "b"} relative aspect-[4/3] overflow-hidden shadow-lift`}>
           <Image
             src={image}
             alt={imageAlt}

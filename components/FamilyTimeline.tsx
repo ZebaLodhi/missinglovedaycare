@@ -37,7 +37,7 @@ export default function FamilyTimeline() {
           <p className="inline-flex items-center gap-2 rounded-full bg-teal/25 px-4 py-1.5 text-xs font-extrabold uppercase tracking-[0.18em] text-teal-light">
             Since {firstReviewYear}
           </p>
-          <h2 className="mt-5 text-3xl text-cream sm:text-4xl">
+          <h2 className="mt-5 font-display text-3xl font-bold text-cream sm:text-4xl">
             {years} years of families, in their own words
           </h2>
           <p className="mt-4 text-lg text-cream/80">
